@@ -1,0 +1,121 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --verydarkblue: hsl(216, 12%, 8%);
+}
+body {
+  background-color: black;
+  font-family: "Overpass";
+  height: 100dvh;
+}
+.card {
+  box-sizing: border-box;
+  margin: 10% auto;
+  width: 330px;
+  background-color: var(--verydarkblue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.card2 {
+  box-sizing: border-box;
+  margin: 10% auto;
+  width: 330px;
+  background-color: var(--verydarkblue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  align-items: center;
+  text-align: center;
+}
+.visible {
+  display: none;
+}
+svg {
+  align-self: center;
+}
+h1,
+h2 {
+  color: var(--white);
+  margin-bottom: 0;
+}
+p {
+  color: var(--medium-grey);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.res {
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  width: 60%;
+  padding: 10px;
+  margin: 30px 0;
+  border-radius: 25px;
+}
+
+.row {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+}
+.round {
+  padding: 0;
+  background-color: var(--dark-blue);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: var(--medium-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+}
+.clicked {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+button {
+  background-color: var(--orange);
+  border: none;
+  height: 45px;
+  border-radius: 25px;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  cursor: pointer;
+}
+button:active {
+  color: var(--light-grey);
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--medium-grey);
+}
+.attribution a {
+  color: var(--medium-grey);
+}
